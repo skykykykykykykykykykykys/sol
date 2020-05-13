@@ -1,6 +1,8 @@
 # sol
 First step into the void. Intinya mau bikin API yang ngegenerate nama2 random buat aplikasi selanjutnya. Maybe stellaris system names etc.?
 
+Names generated are sourced from Stellaris Base Game made by Paradox Interactive AB, Sweden. I do not own the names
+
 ## Name Source
 D:\Steam\steamapps\common\Stellaris\common\random_names\base
 
