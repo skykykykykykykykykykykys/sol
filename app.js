@@ -1,16 +1,17 @@
 
-const express = require("express");
-
-const app = express();
-
-app.get("/", function(req, res) {
-    console.log(req);
-    res.send("Hello");
-});
+var express = require('express'),
+app = express(),
+port = process.env.PORT || 3000,
+bodyParser = require('body-parser'),
+controller = require('./controller');
 
 
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
-app.listen(3000, function() {
-    console.log("Server started on port 3000");
-});
+var routes = require('./routes');
+routes(app);
+
+app.listen(port);
+console.log('Project Sol has started on PORT : ' + port);
 
