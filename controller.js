@@ -17,8 +17,8 @@ function readStarNames() {
         var random = Math.floor(Math.random() * Math.floor(1439));
         var name = data.toString().split("\n")[random];
 
-        name = "\"Edor_Vang\""
-        name.replace(("\"",""));
+        //name = "\"Edor_Vang\""
+        //name.replace(("\"",""));
         console.log(name);
 
         //processing name with multiple words
